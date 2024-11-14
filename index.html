@@ -1,0 +1,222 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merienda&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircardianEats</title>
+    
+    <link rel="stylesheet" href="styles/EstilosIndex.css">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png">
+            <h1>CircardianEats</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#PagInicio">Inicio</a></li>
+                <li><a href="#PagBeneficios">Beneficios</a></li>
+                <li><a href="#PagSobreNosotros">Acerca de nosotros</a></li>
+                <li><a href="#Pagina_App">App</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select>
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+        <a href="#IniciarSesion" class="login-btn" >Iniciar Sesión</a>
+    </header>
+
+    <section class="main-content" id="PagInicio">
+        <div class="text-section">
+            <h2>Come sano, come bien, todo es tan fácil si lo eligen por nosotros</h2>
+            <p>Una dieta balanceada diseñada por ti y tu ciclo circadiano</p>
+        </div>
+        <div class="image-section">
+            <img src="images/plato.png" alt="Plato de comida saludable">
+        </div>
+    </section>
+
+    <section class="healthy-life-section" id="PagBeneficios">
+        <div class="content-wrapper">
+            <div class="text-area">
+                <h2>Buscamos impulsar tu vida saludable</h2>
+                <p>
+                    Nos preocupamos por ti y queremos poder motivarte a seguir adelante de una manera sana y saludable, 
+                    de una manera respaldada por las mejores tecnologías en términos de Inteligencia artificial. 
+                    Buscamos el cambio gracias a tu ritmo circadiano.
+                </p>
+                <div class="icon-text-area">
+                    <div class="icon-box">
+                        <img src="images/icon1.png" alt="Icono cambio circadiano">
+                        <h3>Todo depende de ti:</h3>
+                        <p>Buscamos el cambio gracias a tu ritmo circadiano</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="images/icon2.png" alt="Icono inteligencia artificial">
+                        <h3>Y te lo ofrecemos todo a ti:</h3>
+                        <p>Te ayudaremos con la inteligencia artificial "Circadian IA" para ello</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-area">
+                <img src="images/vegetable-man.png" alt="Figura de hombre hecho de vegetales">
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-wrapper">
+            <div class="cta-content">
+                <h2>¿Quieres iniciar con el cambio?</h2>
+                <p>Solo regístrate y conviértete en la persona que siempre soñaste</p>
+                <a href="#IniciarSesion" class="cta-button">Empecemos ➜</a>
+            </div>
+        </div>
+    </section>
+    <section class="login-section" id ="IniciarSesion">
+        <div class="login-container" >
+            <h2>Entonces, ¿Qué estás esperando?</h2>
+            <button onclick="redirectToDashboardGoogle()">Iniciar Sesión con Google</button>
+            <div class="or-divider">O</div>
+            
+            <input type="text" placeholder="Correo electrónico" id="email">
+            <input type="password" placeholder="Contraseña" id="password">
+            <button onclick="redirectToDashboard()">Iniciar Sesión</button>
+            
+            <div class="or-divider">¿No tienes cuenta?</div>
+            <button onclick="openRegisterModal()">Registrarse</button>
+
+            <div id="registerModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeRegisterModal()">&times;</span>
+                    <h2>Registrar Cuenta</h2>
+                    <input type="text" placeholder="Correo electrónico" id="registerEmail">
+                    <input type="password" placeholder="Contraseña" id="registerPassword">
+                    <button onclick="registerAccount()">Registrarse</button>
+                </div>
+            </div>
+
+            <script>
+                  function openRegisterModal() {
+                document.getElementById('registerModal').style.display = 'block';
+            }
+            function closeRegisterModal() {
+                document.getElementById('registerModal').style.display = 'none';
+            }
+            function registerAccount() {
+                const registerEmail = document.getElementById('registerEmail').value;
+                const registerPassword = document.getElementById('registerPassword').value;
+                if (registerEmail === "" || registerPassword === "") {
+                    alert("Por favor, complete ambos campos para registrarse.");
+                    return;
+                }
+                alert("Cuenta registrada con éxito:\nEmail: " + registerEmail);
+
+                closeRegisterModal();
+            }
+              function redirectToDashboard() {
+                const email = document.getElementById('email').value;
+                const password = document.getElementById('password').value;
+                
+                if (email === "" || password === "") {
+                    alert("Por favor, complete ambos campos para iniciar sesión.");
+                    return; 
+                }
+                window.location.href = 'InicioExitoso.html'; 
+            }
+              function redirectToDashboardGoogle() {
+                alert("Inicio de sesion extoso...")
+                window.location.href = 'InicioExitoso.html'; 
+              }
+            </script>
+        </div>
+    </section>
+    <section class="about-us-section" id = "PagSobreNosotros">
+        <h2 class="about-us-title">Sobre Nosotros </h2>
+        <div class="about-us-content">
+            <img src="images/caratula-ciclo-circadiano.png" alt="Sobre Nosotros" class="about-us-image">
+            <p class="about-us-text">
+                Somos una startup orientada a la innovación y uso de nuevas técnicas como base principal, 
+                nos especializamos en el desarrollo de un sistema web y móvil que optimice la selección de 
+                alimentos acorde al ritmo circadiano de cada usuario, utilizando como tecnología la Inteligencia 
+                artificial. Nuestro objetivo es mejorar el bienestar y la salud a través de una alimentación 
+                personalizada que se alinee con los ciclos naturales del cuerpo, promoviendo una mejor digestión, 
+                metabolismo y energía a lo largo del día.
+            </p>
+        </div>
+        <div class="mission-vision" id = "PagMisionVision">
+            <div class="mission">
+                <h3>Misión</h3>
+                <p>
+                    Nuestra misión es desarrollar soluciones tecnológicas innovadoras que promuevan la salud y el bienestar 
+                    del usuario a través de una personalización alimentaria basada en el ritmo circadiano. Nos comprometemos 
+                    a utilizar inteligencia artificial para ofrecer recomendaciones nutricionales precisas y accesibles, 
+                    mejorando la calidad de vida de nuestros clientes mediante una alimentación alineada con los ciclos 
+                    naturales del cuerpo.
+                </p>
+            </div>
+            <div class="vision">
+                <h3>Visión</h3>
+                <p>
+                    En los próximos 10 años, ser líderes en el ámbito de la salud digital, redefiniendo cómo las personas 
+                    interactúan con su alimentación a través de tecnologías avanzadas. Aspiramos a crear un mundo donde 
+                    cada individuo pueda optimizar su bienestar personal mediante decisiones alimenticias informadas y 
+                    respaldadas por ciencia, contribuyendo a una sociedad más saludable y consciente de la importancia de 
+                    la nutrición personalizada.
+                </p>
+            </div>
+        </div>
+    </section>
+    
+    
+    <section class="features-section" id="Pagina_App">
+        <h2>Disfruta de todas nuestras funciones</h2>
+        <p>Descarga ya nuestra aplicación en la app store y google play. Disfruta de todas nuestras novedades y encuentra la mejor versión de ti mismo.</p>
+        <div class="download-logos">
+            <img src="images/download-googleplay.png">
+            <img src="images/download-appstore.png">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo CircadianEats">
+                <p>Una plataforma para tu cuidado y desarrollo personal, físico y mental</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Directos</h3>
+                <ul>
+                    <li><a href="#PagInicio">Buscar CircadianEats</a></li>
+                    <li><a href="#IniciarSesion">Regístrate</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#PagSobreNosotros">Sobre nosotros</a></li>
+                    <li><a href="#PagMisionVision">Misión y Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/home?lang=es">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EatSync - CircadianEats</p>
+        </div>
+    </footer>
+    
+
+</body>
+</html>

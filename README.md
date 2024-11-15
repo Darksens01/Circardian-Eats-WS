@@ -7,7 +7,7 @@ LandingPage sobre el uso del ciclo circadiano para la creación de una dieta usa
 _Que cosas necesitas para instalar el software y como instalarlas_
 
 ```
-Solo necesitaras seguir las ias instrucciones que se daran a continución, dificil perderse la verdad...
+Solo necesitaras seguir las instrucciones que se daran a continución, dificil perderse la verdad...
 ```
 
 ### Instalación 

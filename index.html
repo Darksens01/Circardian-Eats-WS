@@ -1,0 +1,422 @@
+<!DOCTYPE html> 
+<html lang="es">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather&family=Merienda&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CircardianEats</title>
+    <link rel="stylesheet" href="styles/EstilosIndex.css">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+<body>
+
+    <header class="header">
+        <div class="logo">
+            <img src="images/logo.png">
+            <h1>CircardianEats</h1>
+        </div>
+        <nav>
+            <ul>
+                <li><a href="#PagInicio">Inicio</a></li>
+                <li><a href="#PagBeneficios">Beneficios</a></li>
+                <li><a href="#PagSobreNosotros">Acerca de nosotros</a></li>
+                <li><a href="#PagPlanes">Planes</a></li>
+                <li><a href="#Pagina_App">App</a></li>
+            </ul>
+        </nav>
+        <div class="language-selector">
+            <select id="language-switcher">
+                <option value="es">ES</option>
+                <option value="en">EN</option>
+            </select>
+        </div>
+        
+        <a href="#IniciarSesion" class="login-btn" >Iniciar Sesión</a>
+    </header>
+
+    <section class="main-content" id="PagInicio">
+        <div class="text-section">
+            <h2>Come sano, come bien, todo es tan fácil si lo eligen por nosotros</h2>
+            <p>Una dieta balanceada diseñada por ti y tu ciclo circadiano</p>
+        </div>
+        <div class="image-section">
+            <img src="images/plato.png" alt="Plato de comida saludable">
+        </div>
+    </section>
+
+    <section class="healthy-life-section" id="PagBeneficios">
+        <div class="content-wrapper">
+            <div class="text-area">
+                <h2>Buscamos impulsar tu vida saludable</h2>
+                <p>
+                    Nos preocupamos por ti y queremos poder motivarte a seguir adelante de una manera sana y saludable, 
+                    de una manera respaldada por las mejores tecnologías en términos de Inteligencia artificial. 
+                    Buscamos el cambio gracias a tu ritmo circadiano.
+                </p>
+                <div class="icon-text-area">
+                    <div class="icon-box">
+                        <img src="images/icon1.png" alt="Icono cambio circadiano">
+                        <h3>Todo depende de ti:</h3>
+                        <p>Buscamos el cambio gracias a tu ritmo circadiano</p>
+                    </div>
+                    <div class="icon-box">
+                        <img src="images/icon2.png" alt="Icono inteligencia artificial">
+                        <h3>Y te lo ofrecemos todo a ti:</h3>
+                        <p>Te ayudaremos con la inteligencia artificial "Circadian IA" para ello</p>
+                    </div>
+                </div>
+            </div>
+            <div class="image-area">
+                <img src="images/vegetable-man.png" alt="Figura de hombre hecho de vegetales">
+            </div>
+        </div>
+    </section>
+    <section class="about-us-section" id="PagSobreNosotros">
+        <h2 class="about-us-title" id="about-us-title">Sobre Nosotros </h2>
+        
+        <div class="accordion-container">
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span id="about-us-header">Sobre Nosotros</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <div class="about-us-content">
+                        <img src="images/caratula-ciclo-circadiano.png" alt="Sobre Nosotros" class="about-us-image">
+                        <p id="about-us-text" class="about-us-text">
+                            Somos una startup orientada a la innovación y uso de nuevas técnicas como base principal, 
+                            nos especializamos en el desarrollo de un sistema web y móvil que optimice la selección de 
+                            alimentos acorde al ritmo circadiano de cada usuario, utilizando como tecnología la Inteligencia 
+                            artificial. Nuestro objetivo es mejorar el bienestar y la salud a través de una alimentación 
+                            personalizada que se alinee con los ciclos naturales del cuerpo, promoviendo una mejor digestión, 
+                            metabolismo y energía a lo largo del día.
+                        </p>
+                    </div>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span id="mission-header">Misión</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p id="mission-text">
+                        Nuestra misión es desarrollar soluciones tecnológicas innovadoras que promuevan la salud y el bienestar 
+                        del usuario a través de una personalización alimentaria basada en el ritmo circadiano. Nos comprometemos 
+                        a utilizar inteligencia artificial para ofrecer recomendaciones nutricionales precisas y accesibles, 
+                        mejorando la calidad de vida de nuestros clientes mediante una alimentación alineada con los ciclos 
+                        naturales del cuerpo.
+                    </p>
+                </div>
+            </div>
+    
+            <div class="accordion-item">
+                <div class="accordion-header">
+                    <span id="vision-header">Visión</span>
+                    <span class="accordion-icon">+</span>
+                </div>
+                <div class="accordion-content">
+                    <p id="vision-text">
+                        En los próximos 10 años, ser líderes en el ámbito de la salud digital, redefiniendo cómo las personas 
+                        interactúan con su alimentación a través de tecnologías avanzadas. Aspiramos a crear un mundo donde 
+                        cada individuo pueda optimizar su bienestar personal mediante decisiones alimenticias informadas y 
+                        respaldadas por ciencia, contribuyendo a una sociedad más saludable y consciente de la importancia de 
+                        la nutrición personalizada.
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="pricing-section" id="PagPlanes">
+        <h2 class="pricing-title">Elige el plan que mas se acople a ti</h2>
+        <p class="pricing-subtitle">Gratis - 3 meses de prueba </p>
+        <div class="pricing-cards">
+            <div class="card">
+                <h3>Noob</h3>
+                <p class="price">Gratis</p>
+                <p>Acceso limitado a nuestra app</p>
+                <p>Pertenecer a nuestra comunidad</p>
+                <p>Participar en los foros</p>
+                <p>Soporte Basico</p>
+                <button class="start-trial-btn">Empecemos</button>
+            </div>
+            <div class="card">
+                <h3>Pro</h3>
+                <p class="price">$20</p>
+                <p>Todo lo anterior</p>
+                <p>Puedes compartir tu cuenta con personas</p>
+                <p>Recetas personalizadas especialmente para ti</p>
+                <p>Acceso a foros vips</p>
+                <p>Prioridad en el soporte</p>
+                <button class="start-trial-btn">3 meses de prueba</button>
+            </div>
+            <div class="card">
+                <h3>Hacker</h3>
+                <p class="price">$100</p>
+                <p>Todo lo anterior</p>
+
+                <p>Tu puedes diseñar la app</p>
+                <p>Recetas diarias, vamos a tu casa, te preparamos la cena y te obligamos a comerla</p>
+                <p>Contratación de nutricionistas experimentados</p>
+                <p>Soporte 24/7</p>
+                <button class="start-trial-btn">3 meses de prueba</button>
+            </div>
+        </div>
+    </section>
+
+    <section class="login-section" id ="IniciarSesion">
+        <div class="login-container" >
+            <h2>Entonces, ¿Qué estás esperando?</h2>
+            <button onclick="redirectToDashboardGoogle()">Iniciar Sesión con Google</button>
+            <div class="or-divider">O</div>
+            
+            <input type="text" placeholder="Correo electrónico" id="email">
+            <input type="password" placeholder="Contraseña" id="password">
+            <button onclick="redirectToDashboard()">Iniciar Sesión</button>
+            
+            <div class="or-divider">¿No tienes cuenta?</div>
+            <button onclick="openRegisterModal()">Registrarse</button>
+
+            <div id="registerModal" class="modal" style="display: none;">
+                <div class="modal-content">
+                    <span class="close" onclick="closeRegisterModal()">&times;</span>
+                    <h2>Registrar Cuenta</h2>
+                    <input type="text" placeholder="Correo electrónico" id="registerEmail">
+                    <input type="password" placeholder="Contraseña" id="registerPassword">
+                    <button onclick="registerAccount()">Registrarse</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+    <section class="features-section" id="Pagina_App">
+        <h2>Disfruta de todas nuestras funciones</h2>
+        <p>Descarga ya nuestra aplicación en la app store y google play. Disfruta de todas nuestras novedades y encuentra la mejor versión de ti mismo.</p>
+        <div class="download-logos">
+            <img src="images/download-googleplay.png">
+            <img src="images/download-appstore.png">
+        </div>
+    </section>
+    <footer class="footer">
+        <div class="footer-content">
+            <div class="footer-logo">
+                <img src="images/logo.png" alt="Logo CircadianEats">
+                <p>Una plataforma para tu cuidado y desarrollo personal, físico y mental</p>
+            </div>
+            <div class="footer-links">
+                <h3>Links Directos</h3>
+                <ul>
+                    <li><a href="#PagInicio">Buscar CircadianEats</a></li>
+                    <li><a href="#IniciarSesion">Regístrate</a></li>
+                </ul>
+            </div>
+            <div class="footer-about">
+                <h3>Sobre</h3>
+                <ul>
+                    <li><a href="#PagSobreNosotros">Sobre nosotros</a></li>
+                    <li><a href="#PagMisionVision">Misión y Vision</a></li>
+                </ul>
+            </div>
+            <div class="footer-social">
+                <h3>Social</h3>
+                <ul>
+                    <li><a href="https://www.facebook.com/">Facebook</a></li>
+                    <li><a href="https://x.com/home?lang=es">Twitter</a></li>
+                    <li><a href="https://www.instagram.com/">Instagram</a></li>
+                </ul>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <p>&copy; 2024 EatSync - CircadianEats</p>
+        </div>
+    </footer>
+
+    <script>
+        function openRegisterModal() {
+      document.getElementById('registerModal').style.display = 'block';
+  }
+  function closeRegisterModal() {
+      document.getElementById('registerModal').style.display = 'none';
+  }
+  function registerAccount() {
+      const registerEmail = document.getElementById('registerEmail').value;
+      const registerPassword = document.getElementById('registerPassword').value;
+      if (registerEmail === "" || registerPassword === "") {
+          alert("Por favor, complete ambos campos para registrarse.");
+          return;
+      }
+      alert("Cuenta registrada con éxito:\nEmail: " + registerEmail);
+
+      closeRegisterModal();
+  }
+    function redirectToDashboard() {
+      const email = document.getElementById('email').value;
+      const password = document.getElementById('password').value;
+      
+      if (email === "" || password === "") {
+          alert("Por favor, complete ambos campos para iniciar sesión.");
+          return; 
+      }
+      window.location.href = 'InicioExitoso.html'; 
+  }
+    function redirectToDashboardGoogle() {
+      alert("Inicio de sesion extoso...")
+      window.location.href = 'InicioExitoso.html'; 
+    }
+  
+    document.querySelectorAll('.accordion-header').forEach(header => {
+        header.addEventListener('click', () => {
+            const content = header.nextElementSibling;
+            const icon = header.querySelector('.accordion-icon');
+
+            if (content.style.display === 'block') {
+                content.style.display = 'none';
+                icon.textContent = '+';
+            } else {
+                content.style.display = 'block';
+                icon.textContent = '-';
+            }
+        });
+    });
+
+    const translations = {
+        es: {
+            header: {
+                inicio: "Inicio",
+                beneficios: "Beneficios",
+                sobreNosotros: "Acerca de nosotros",
+                planes: "Planes",
+                app: "App",
+                iniciarSesion: "Iniciar Sesión"
+            },
+            mainContent: {
+                title: "Come sano, come bien, todo es tan fácil si lo eligen por nosotros",
+                subtitle: "Una dieta balanceada diseñada por ti y tu ciclo circadiano"
+            },
+            healthyLife: {
+                title: "Buscamos impulsar tu vida saludable",
+                paragraph: "Nos preocupamos por ti y queremos poder motivarte a seguir adelante de una manera sana y saludable, de una manera respaldada por las mejores tecnologías en términos de Inteligencia artificial. Buscamos el cambio gracias a tu ritmo circadiano.",
+                icon1: {
+                    title: "Todo depende de ti:",
+                    text: "Buscamos el cambio gracias a tu ritmo circadiano"
+                },
+                icon2: {
+                    title: "Y te lo ofrecemos todo a ti:",
+                    text: "Te ayudaremos con la inteligencia artificial 'Circadian IA' para ello"
+                }
+            },
+            aboutUs: {
+                title: "Sobre Nosotros",
+                aboutUsHeader: "Sobre Nosotros",
+                aboutUsText: "Somos una startup orientada a la innovación y uso de nuevas técnicas como base principal, nos especializamos en el desarrollo de un sistema web y móvil que optimice la selección de alimentos acorde al ritmo circadiano de cada usuario, utilizando como tecnología la Inteligencia artificial. Nuestro objetivo es mejorar el bienestar y la salud a través de una alimentación personalizada que se alinee con los ciclos naturales del cuerpo, promoviendo una mejor digestión, metabolismo y energía a lo largo del día.",
+                missionHeader: "Misión",
+                missionText: "Nuestra misión es desarrollar soluciones tecnológicas innovadoras que promuevan la salud y el bienestar del usuario a través de una personalización alimentaria basada en el ritmo circadiano. Nos comprometemos a utilizar inteligencia artificial para ofrecer recomendaciones nutricionales precisas y accesibles, mejorando la calidad de vida de nuestros clientes mediante una alimentación alineada con los ciclos naturales del cuerpo.",
+                visionHeader: "Visión",
+                visionText: "En los próximos 10 años, ser líderes en el ámbito de la salud digital, redefiniendo cómo las personas interactúan con su alimentación a través de tecnologías avanzadas. Aspiramos a crear un mundo donde cada individuo pueda optimizar su bienestar personal mediante decisiones alimenticias informadas y respaldadas por ciencia, contribuyendo a una sociedad más saludable y consciente de la importancia de la nutrición personalizada."
+            },
+            loginSection: {
+                title: "Entonces, ¿Qué estás esperando?",
+                googleLogin: "Iniciar Sesión con Google",
+                emailPlaceholder: "Correo electrónico",
+                passwordPlaceholder: "Contraseña",
+                loginButton: "Iniciar Sesión",
+                noAccount: "¿No tienes cuenta?",
+                registerButton: "Registrarse"
+            }
+        },
+        en: {
+            header: {
+                inicio: "Home",
+                beneficios: "Benefits",
+                sobreNosotros: "About Us",
+                planes: "Plans",
+                app: "App",
+                iniciarSesion: "Login"
+            },
+            mainContent: {
+                title: "Eat healthy, eat well, everything is easy if we choose for you",
+                subtitle: "A balanced diet designed by you and your circadian rhythm"
+            },
+            healthyLife: {
+                title: "We aim to boost your healthy life",
+                paragraph: "We care about you and want to motivate you to move forward in a healthy way, backed by the best AI technologies. We seek change through your circadian rhythm.",
+                icon1: {
+                    title: "It's all about you:",
+                    text: "We seek change through your circadian rhythm"
+                },
+                icon2: {
+                    title: "And we offer it all to you:",
+                    text: "We'll help you with the 'Circadian AI' for that"
+                }
+            },
+            aboutUs: {
+                title: "About Us",
+                aboutUsHeader: "About Us",
+                aboutUsText: "We are a startup focused on innovation and the use of new techniques as a main foundation. We specialize in developing a web and mobile system that optimizes food selection according to each user's circadian rhythm, using artificial intelligence technology. Our goal is to improve well-being and health through personalized nutrition that aligns with the body's natural cycles, promoting better digestion, metabolism, and energy throughout the day.",
+                missionHeader: "Mission",
+                missionText: "Our mission is to develop innovative technological solutions that promote user health and well-being through personalized nutrition based on the circadian rhythm. We are committed to using artificial intelligence to provide accurate and accessible nutritional recommendations, improving the quality of life of our clients through nutrition aligned with the body's natural cycles.",
+                visionHeader: "Vision",
+                visionText: "In the next 10 years, we aim to lead the digital health field, redefining how people interact with their food through advanced technologies. We aspire to create a world where every individual can optimize their personal well-being through informed food choices backed by science, contributing to a healthier society aware of the importance of personalized nutrition."
+            },
+            loginSection: {
+                title: "So, what are you waiting for?",
+                googleLogin: "Login with Google",
+                emailPlaceholder: "Email",
+                passwordPlaceholder: "Password",
+                loginButton: "Login",
+                noAccount: "Don't have an account?",
+                registerButton: "Sign Up"
+            }
+        }
+    };
+
+    function switchLanguage(lang) {
+        const content = translations[lang];
+
+        document.querySelector("nav ul li:nth-child(1) a").textContent = content.header.inicio;
+        document.querySelector("nav ul li:nth-child(2) a").textContent = content.header.beneficios;
+        document.querySelector("nav ul li:nth-child(3) a").textContent = content.header.sobreNosotros;
+        document.querySelector("nav ul li:nth-child(4) a").textContent = content.header.planes;
+        document.querySelector("nav ul li:nth-child(5) a").textContent = content.header.app;
+        document.querySelector(".login-btn").textContent = content.header.iniciarSesion;
+
+        document.querySelector(".main-content .text-section h2").textContent = content.mainContent.title;
+        document.querySelector(".main-content .text-section p").textContent = content.mainContent.subtitle;
+
+        document.querySelector(".healthy-life-section .text-area h2").textContent = content.healthyLife.title;
+        document.querySelector(".healthy-life-section .text-area p").textContent = content.healthyLife.paragraph;
+        document.querySelector(".icon-box:nth-child(1) h3").textContent = content.healthyLife.icon1.title;
+        document.querySelector(".icon-box:nth-child(1) p").textContent = content.healthyLife.icon1.text;
+        document.querySelector(".icon-box:nth-child(2) h3").textContent = content.healthyLife.icon2.title;
+        document.querySelector(".icon-box:nth-child(2) p").textContent = content.healthyLife.icon2.text;
+
+        document.querySelector("#about-us-title").textContent = content.aboutUs.title;
+        document.querySelector("#about-us-header").textContent = content.aboutUs.aboutUsHeader;
+        document.querySelector("#about-us-text").textContent = content.aboutUs.aboutUsText;
+        document.querySelector("#mission-header").textContent = content.aboutUs.missionHeader;
+        document.querySelector("#mission-text").textContent = content.aboutUs.missionText;
+        document.querySelector("#vision-header").textContent = content.aboutUs.visionHeader;
+        document.querySelector("#vision-text").textContent = content.aboutUs.visionText;
+
+        document.querySelector(".login-section h2").textContent = content.loginSection.title;
+        document.querySelector(".login-section button:nth-of-type(1)").textContent = content.loginSection.googleLogin;
+        document.getElementById("email").placeholder = content.loginSection.emailPlaceholder;
+        document.getElementById("password").placeholder = content.loginSection.passwordPlaceholder;
+        document.querySelector(".login-section button:nth-of-type(2)").textContent = content.loginSection.loginButton;
+        document.querySelector(".login-section .or-divider:nth-of-type(2)").textContent = content.loginSection.noAccount;
+        document.querySelector(".login-section button:nth-of-type(3)").textContent = content.loginSection.registerButton;
+    }
+
+    document.getElementById("language-switcher").addEventListener("change", (e) => {
+        const selectedLanguage = e.target.value;
+        switchLanguage(selectedLanguage);
+    });
+
+    switchLanguage("es");
+
+
+  </script>
+
+</body>
+</html>
